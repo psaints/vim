@@ -1,0 +1,72 @@
+" Encoding por defeito
+set encoding=utf-8
+
+" Tabs (tabs de 4, a usar espaços)
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+" Afinal é melhor não usar espaços quando mais ninguém usa
+"set expandtab
+
+" Usar o indent da linha anterior, incluindo os caracteres usados
+set autoindent
+set copyindent
+
+" Fazer o backspace recuar indents, fins de linha e o ínicio da linha
+set backspace=indent,eol,start
+
+" Caracteres bonitos para tabs e fins de linha
+" O tab no listchars não funciona se os tabs forem feitos com espaços
+" (expandtab). Além disso, não funciona muito bem com alguns temas.
+"set list
+set listchars=tab:▸\ ,eol:¬
+
+" Desactiva as modelines por questões de segurança além de eu não as querer.
+" As modelines são aqueles comentários nos ficheiros com # vim ts=4 etc
+set modelines=0
+
+" Fazer com que o search use case-insensitive se estiver tudo em minúsculas
+" e case-sensitive se houver uma ou mais maúsculas
+set ignorecase
+set smartcase
+
+" Começa a pesquisa à medida que se vai escrevendo
+set incsearch
+
+" Inverte o comportamento da pesquisa global
+" :s/foo/bar/ em vez de :s/foo/bar/g e vice versa
+set gdefault
+
+" Mostra sempre a status line
+set laststatus=2
+
+" Mostra o número da linha
+set number
+
+" Mantém X linhas acima/abaixo do cursor, excepto no início e fim
+set scrolloff=10
+
+" Mostra possíveis hipóteses para o tab completion
+set wildmenu
+
+" Faz highlight na linha onde está o cursor. Pesadito para o processador
+"set cursorline
+
+" Comportamento
+set history=1000
+set undolevels=1000
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set nobackup
+set noswapfile
+
+" Permitir mudar de buffer sem ter de gravar
+set hidden
+
+" Spell ckeck
+set spelllang=pt_pt
+
+" Activar sintaxe
+if &t_Co >= 256 || has("gui_running")
+	syntax on
+endif
+

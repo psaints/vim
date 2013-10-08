@@ -1,0 +1,15 @@
+" = PLUGINS
+" Pathogen
+filetype off
+execute pathogen#infect()
+filetype plugin indent on
+
+" Tagbar
+let g:tagbar_width=24
+
+" UltiSnips
+let g:UltiSnipsEditSplit="vertical"
+
+" Syntastic
+let g:syntastic_php_checkers=['php']
+

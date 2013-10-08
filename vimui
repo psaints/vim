@@ -1,0 +1,23 @@
+" Visual
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+set title
+
+" Apresentação do texto                                                                             
+set wrap                                                                               
+set colorcolumn=100 
+
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
+if &t_Co >= 256 || has("gui_running")
+    syntax on
+    colorscheme jellybeans
+endif
+if has("gui_running")
+    set lines=60 columns=150
+    "else
+    "set lines=40 columns=90
+endif
+

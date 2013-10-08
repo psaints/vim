@@ -1,0 +1,9 @@
+" Bindings
+nnoremap <C-q> :q<CR>
+" Abre a Tagabr
+noremap <silent> <Leader>y :TagbarToggle<CR>
+" Abre a NERD Tree
+noremap <silent> <Leader>n :NERDTreeToggle<CR>
+" Fugitive
+nnoremap <Leader>gs :Gstatus<CR>
+

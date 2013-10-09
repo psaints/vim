@@ -3,12 +3,12 @@ set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 set title
 
-" Apresentação do texto                                                                             
-set wrap                                                                               
-set colorcolumn=100 
+" Apresentação do texto
+set wrap
+set colorcolumn=100
 
 if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
+	set t_Co=256
 endif
 
 if &t_Co >= 256 || has("gui_running")

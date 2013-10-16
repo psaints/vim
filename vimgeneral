@@ -47,7 +47,7 @@ set number
 set scrolloff=10
 
 " Mostra possíveis hipóteses para o tab completion
-set wildmenu
+"set wildmenu
 
 " Faz highlight na linha onde está o cursor. Pesadito para o processador
 "set cursorline

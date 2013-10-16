@@ -7,6 +7,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Usar <Ctrl>+<Space> para o omni completion
+inoremap <C-Space> <C-x><C-o>
+inoremap <C-@> <C-Space>
+
 inoremap jj <ESC>
 let mapleader = ","
 

@@ -19,3 +19,12 @@
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "bundle/JavaScript-Indent"]
+	path = bundle/JavaScript-Indent
+	url = https://github.com/vim-scripts/JavaScript-Indent.git
+[submodule "bundle/javascript-libraries-syntax.vim"]
+	path = bundle/javascript-libraries-syntax.vim
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+[submodule "bundle/vim-javascript-syntax"]
+	path = bundle/vim-javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git

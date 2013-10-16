@@ -14,8 +14,8 @@ endif
 set background=dark
 if &t_Co >= 256 || has("gui_running")
     syntax on
-    "colorscheme jellybeans
-    colorscheme solarized
+    colorscheme jellybeans
+    "colorscheme solarized
 endif
 if has("gui_running")
     set lines=60 columns=150

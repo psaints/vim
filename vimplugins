@@ -13,3 +13,5 @@ let g:UltiSnipsEditSplit="vertical"
 " Syntastic
 let g:syntastic_php_checkers=['php']
 
+
+" vim: syntax=vim

@@ -23,3 +23,5 @@ if has("gui_running")
     "set lines=40 columns=90
 endif
 
+
+" vim: syntax=vim

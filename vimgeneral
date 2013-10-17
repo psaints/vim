@@ -23,7 +23,8 @@ set listchars=tab:▸\ ,eol:¬
 
 " Desactiva as modelines por questões de segurança além de eu não as querer.
 " As modelines são aqueles comentários nos ficheiros com # vim ts=4 etc
-set modelines=0
+" Afinal quero
+"set modelines=0
 
 " Fazer com que o search use case-insensitive se estiver tudo em minúsculas
 " e case-sensitive se houver uma ou mais maúsculas
@@ -62,11 +63,33 @@ set noswapfile
 " Permitir mudar de buffer sem ter de gravar
 set hidden
 
-" Spell ckeck
-set spelllang=pt_pt
+" Língua do spell check
+set spelllang=pt_PT
 
 " Activar sintaxe
 if &t_Co >= 256 || has("gui_running")
 	syntax on
 endif
 
+" Don't close window, when deleting a buffer
+command! Bclose call <SID>BufcloseCloseIt()
+function! <SID>BufcloseCloseIt()
+   let l:currentBufNum = bufnr("%")
+   let l:alternateBufNum = bufnr("#")
+
+   if buflisted(l:alternateBufNum)
+     buffer #
+   else
+     bnext
+   endif
+
+   if bufnr("%") == l:currentBufNum
+     new
+   endif
+
+   if buflisted(l:currentBufNum)
+     execute("bdelete! ".l:currentBufNum)
+   endif
+endfunction
+
+" vim: syntax=vim

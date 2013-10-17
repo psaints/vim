@@ -1,3 +1,5 @@
+let mapleader = ","
+
 " Bindings
 nnoremap <C-q> :q<CR>
 nnoremap <C-s> :wall<CR>
@@ -7,12 +9,23 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Spell check
+map <leader>ss :setlocal spell!<cr>
+
+map <leader>sp :setlocal spelllang=pt<cr>
+map <leader>se :setlocal spelllang=en<cr>
+
+map <leader>sd ]s
+map <leader>sa [s
+map <leader>sm zg
+map <leader>sc z=
+
 " Usar <Ctrl>+<Space> para o omni completion
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
 
+" Usar jj como ESC
 inoremap jj <ESC>
-let mapleader = ","
 
 " Abre a Tagabr
 noremap <silent> <Leader>y :TagbarToggle<CR>
@@ -21,3 +34,10 @@ noremap <silent> <Leader>n :NERDTreeToggle<CR>
 " Fugitive
 nnoremap <Leader>gs :Gstatus<CR>
 
+" Atalhos para trocar a janela
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" vim: syntax=vim

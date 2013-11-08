@@ -92,4 +92,7 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
+" Formatar XML com '=='
+let &l:equalprg='xmllint --format --recover -'
+
 " vim: syntax=vim

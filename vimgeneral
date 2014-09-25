@@ -95,4 +95,8 @@ endfunction
 " Formatar XML com '=='
 "let &l:equalprg='xmllint --format --recover -'
 
+" Ler .vimrc da running directory
+set exrc
+set secure
+
 " vim: syntax=vim

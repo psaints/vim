@@ -13,5 +13,10 @@ let g:UltiSnipsEditSplit="vertical"
 " Syntastic
 let g:syntastic_php_checkers=['php']
 
+" Latex
+imap <C-b> <Plug>Tex_MathBF
+imap <C-c> <Plug>Tex_MathCal
+imap <C-l> <Plug>Tex_LeftRight
+imap <buffer> <leader>fu <Plug>Tex_InsertItemOnThisLine
 
 " vim: syntax=vim

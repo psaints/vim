@@ -6,7 +6,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 " Afinal é melhor não usar espaços quando mais ninguém usa
-"set expandtab
+set expandtab
 
 " Usar o indent da linha anterior, incluindo os caracteres usados
 set autoindent

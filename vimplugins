@@ -11,12 +11,23 @@ let g:tagbar_width=24
 let g:UltiSnipsEditSplit="vertical"
 
 " Syntastic
-let g:syntastic_php_checkers=['php']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+"let g:syntastic_php_checkers = ['php', 'phpmd', 'phpcs']
+let g:syntastic_php_checkers = ['php']
 
 " Latex
 imap <C-b> <Plug>Tex_MathBF
 imap <C-c> <Plug>Tex_MathCal
 imap <C-l> <Plug>Tex_LeftRight
 imap <buffer> <leader>fu <Plug>Tex_InsertItemOnThisLine
+
+" PHP
 
 " vim: syntax=vim

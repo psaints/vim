@@ -4,5 +4,10 @@ Instalação do Command-T
 
 Javascript (instalar jshint que o syntastic toma conta do resto)
 
-	pacman -S nodejs
-	npm install jshint -g
+    pacman -S nodejs
+    npm install jshint -g
+
+PHP
+
+    yaourt -S phpmd
+    yaourt -S php-codesniffer

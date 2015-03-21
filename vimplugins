@@ -9,6 +9,9 @@ let g:tagbar_width=24
 
 " UltiSnips
 let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Syntastic
 set statusline+=%#warningmsg#

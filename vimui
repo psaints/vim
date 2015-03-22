@@ -23,5 +23,6 @@ if has("gui_running")
     "set lines=40 columns=90
 endif
 
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
 
 " vim: syntax=vim

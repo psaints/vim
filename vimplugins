@@ -31,6 +31,7 @@ imap <C-c> <Plug>Tex_MathCal
 imap <C-l> <Plug>Tex_LeftRight
 imap <buffer> <leader>fu <Plug>Tex_InsertItemOnThisLine
 
-" PHP
+" Airline
+let g:airline_powerline_fonts=1
 
 " vim: syntax=vim

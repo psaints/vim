@@ -5,7 +5,7 @@ set title
 
 " Apresentação do texto
 set wrap
-set colorcolumn=85
+set colorcolumn=80
 
 if $COLORTERM == 'gnome-terminal'
 	set t_Co=256
@@ -18,12 +18,14 @@ if &t_Co >= 256 || has("gui_running")
     "colorscheme solarized
 endif
 if has("gui_running")
-    colorscheme solarized
+    "colorscheme solarized
+    colorscheme jellybeans
     set lines=60 columns=150
 "else
     "set lines=40 columns=90
 endif
 
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
+"set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
+set guifont=Inconsolata\ for\ Powerline\ Medium
 
 " vim: syntax=vim

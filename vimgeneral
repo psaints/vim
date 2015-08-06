@@ -42,7 +42,7 @@ set gdefault
 set laststatus=2
 
 " Mostra o número da linha
-set number
+set relativenumber
 
 " Mantém X linhas acima/abaixo do cursor, excepto no início e fim
 set scrolloff=10

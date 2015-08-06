@@ -6,6 +6,7 @@ set title
 " Apresentação do texto
 set wrap
 set colorcolumn=80
+set cursorline
 
 if $COLORTERM == 'gnome-terminal'
 	set t_Co=256

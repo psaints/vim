@@ -35,3 +35,17 @@ protected function $1()
 	$0;
 }
 endsnippet
+
+snippet getter
+public function get$1()
+{
+	return \$this->$2;
+}
+endsnippet
+
+snippet setter
+public function set$1(\$$2)
+{
+	\$this->$2 = \$$2;
+}
+endsnippet

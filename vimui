@@ -4,7 +4,7 @@ autocmd GUIEnter * set visualbell t_vb=
 set title
 
 " Apresentação do texto
-set wrap
+set nowrap
 set colorcolumn=80
 set cursorline
 

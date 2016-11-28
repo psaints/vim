@@ -92,6 +92,10 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
+" https://www.reddit.com/r/vim/comments/4jhjhu/weekly_vim_tips_and_tricks_thread_10/d3qagkm?context=3
+setlocal formatlistpat=^\\s*[\\[({]\\\?\\([0-9]\\+\\\|[iIvVxXlLcCdDmM]\\+\\\|[a-zA-Z]\\)[\\]:.)}]\\s\\+\\\|^\\s*[-+o*]\\s\\+
+setlocal formatoptions=tcqn
+
 " Formatar XML com '=='
 "let &l:equalprg='xmllint --format --recover -'
 

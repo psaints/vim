@@ -4,7 +4,7 @@ IFS=$'\n\t'
 function recompile_cmdt()
 {
     cd Command-T
-    rake make
+    /usr/bin/rake make
     cd ..
 }
 function update_repos()

@@ -27,6 +27,7 @@ if has("gui_running")
 endif
 
 "set guifont=DejaVu\ Sans\ Mono\ for\ Powerline
-set guifont=Inconsolata\ for\ Powerline\ Medium
+"set guifont=Inconsolata\ for\ Powerline\ Medium
+set guifont=Iosevka
 
 " vim: syntax=vim

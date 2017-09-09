@@ -8,9 +8,9 @@ set nowrap
 set colorcolumn=80
 set cursorline
 
-if $COLORTERM == 'gnome-terminal'
+"if $COLORTERM == 'gnome-terminal'
 	set t_Co=256
-endif
+"endif
 
 set background=dark
 if &t_Co >= 256 || has("gui_running")

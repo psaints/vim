@@ -56,7 +56,7 @@ set scrolloff=10
 " Comportamento
 set history=1000
 set undolevels=1000
-set wildignore=*.swp,*.bak,*.pyc,*.class,**/vendor/**,**/var/**,**/build/**
+set wildignore=*.swp,*.bak,*.pyc,*.class,**/vendor/**,**/var/**,**/build/**,*/apps/*,*/assets/*,*/logs/*
 set nobackup
 set noswapfile
 
